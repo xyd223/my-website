@@ -7,7 +7,9 @@
  */
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  
   output: 'export',
+  trailingSlash: true, // 新增，路径末尾自动带 /，减少404
   // 静态导出时关闭图片优化，避免依赖服务端能力
   images: { unoptimized: true },
 };
